@@ -1,15 +1,20 @@
+#It is the function for the whole calculator programme
 def calc():
 	print("*************************Welcome to python Calculator!***************************************************")
+	#taking the 1st input from the user
 	x=int(input("Enter 1st no. ="))
+	#check whether the input is a integer
 	if x!=int():
 		print("!")
 
 	print("*******************************************************************************************************************")
+	#taking the 2nd input from the user
 	y=input("Enter  2nd no.=")
 	if y!=int():
 		print("!1")
 
 	print("*******************************************************************************************************************")
+	#instructions to the user
 	print("""
 	For Addition    Enter       = = 1 
 	For Subraction     Enter     = = 2
@@ -19,8 +24,9 @@ def calc():
 	For Exponent    Enter       = = 6
 	""")
 	print("*******************************************************************************************************************")
-
+	#getting input for the method of calculation
 	z=input("Enter ur method ==")
+	#makking functions for each calculations
 	def add():
 		print(x+y)
 	def sub():
@@ -37,6 +43,7 @@ def calc():
 
 	def expo():
 		print(x**y)
+	#making if statements for the calculations
 	if int(z)==1:
 		add()
 	if int(z)==2:
@@ -51,6 +58,7 @@ def calc():
 		expo()
 	if ValueError:
 		print("hi")
+	#taking input whether to countinue or stop the program
 	print("Do You Want to countinue?")
 	x=input("y/n?")
 	if x=="y" :
