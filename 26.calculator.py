@@ -46,17 +46,17 @@ def calc():
 	#making if statements for the calculations
 	if int(z)==1:
 		add()
-	if int(z)==2:
+	elif int(z)==2:
 		sub()
-	if int(z)==3:
+	elif int(z)==3:
 		mult()
-	if int(z)==4:
+	elif int(z)==4:
 		div()
-	if int(z)==5:
+	elif int(z)==5:
 		floor()
-	if int(z)==6:
+	elif int(z)==6:
 		expo()
-	if ValueError:
+	elif ValueError:
 		print("hi")
 	#taking input whether to countinue or stop the program
 	print("Do You Want to countinue?")
